@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>NinaMorixMods | ETS2 Modları</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#0f1115; color:#fff; }
+    header { padding:20px; text-align:center; background:#161a22; }
+    header h1 { margin:0; color:#00ffcc; }
+    .lang { margin-top:10px; }
+    .lang button { margin:5px; padding:8px 16px; cursor:pointer; border:none; border-radius:6px; }
+    .container { padding:20px; display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .card { background:#1c2230; border-radius:12px; padding:15px; box-shadow:0 0 10px rgba(0,0,0,0.4); }
+    .card img { width:100%; border-radius:8px; }
+    .card h3 { margin:10px 0; }
+    .card p { font-size:14px; }
+    .download { display:block; text-align:center; margin-top:10px; padding:10px; background:#00ffcc; color:#000; text-decoration:none; border-radius:8px; font-weight:bold; }
+    footer { text-align:center; padding:15px; background:#161a22; font-size:14px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>NinaMorixMods</h1>
+  <p id="subtitle">ETS2 Mod İndirme Merkezi</p>
+  <div class="lang">
+    <button onclick="setLang('tr')">🇹🇷 Türkçe</button>
+    <button onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="card">
+    <img src="https://via.placeholder.com/400x200" alt="ETS2 Mod" />
+    <h3 id="mod1title">Örnek ETS2 Modu</h3>
+    <p id="mod1desc">Bu bir örnek mod açıklamasıdır. Kendi modunla değiştireceksin.</p>
+    <a class="download" href="https://www.mediafire.com/" target="_blank" id="download">İNDİR / DOWNLOAD</a>
+  </div>
+</div>
+
+<footer>
+  © 2026 NinaMorixMods – ETS2 Mods
+</footer>
+
+<script>
+function setLang(lang){
+  if(lang === 'tr'){
+    document.getElementById('subtitle').innerText = 'ETS2 Mod İndirme Merkezi';
+    document.getElementById('mod1title').innerText = 'Örnek ETS2 Modu';
+    document.getElementById('mod1desc').innerText = 'Bu bir örnek mod açıklamasıdır. Kendi modunla değiştireceksin.';
+  } else {
+    document.getElementById('subtitle').innerText = 'ETS2 Mod Download Center';
+    document.getElementById('mod1title').innerText = 'Sample ETS2 Mod';
+    document.getElementById('mod1desc').innerText = 'This is a sample mod description. Replace it with your own mod.';
+  }
+}
+</script>
+
+</body>
+</html>
 
